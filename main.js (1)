@@ -1,0 +1,129 @@
+var imgeList = document.getElementById("photos");
+var nextBtn = document.getElementsByClassName("btn");
+//order box functiona
+var orderBtna = document.getElementById("button-a");
+var orderBody = document.getElementById("box-order");
+var orderBtnb = document.getElementById("button-b");
+var orderBtnc = document.getElementById("button-c");
+var orderBtnd = document.getElementById("button-d");
+var orderBtne = document.getElementById("button-e");
+var orderBtnf = document.getElementById("button-f");
+var orderBtng = document.getElementById("button-g");
+var orderBtnh = document.getElementById("button-h");
+var okBtn = orderBody.querySelector(".button-2");
+//about page or content us page
+
+var aboutBtn = document.getElementById("click-btn");
+var aboutPage = document.querySelector(".about");
+var lastBtn = aboutPage.querySelector(".button-1");
+
+//Login page elements
+var loginBtn = document.getElementById("login-bt");
+var signinPage = document.querySelector(".login-page");
+var signinBtn = signinPage.querySelector(".sign");
+//Login signup btns
+var signupBtn = signinPage.querySelector(".signp");
+var signupPage = document.getElementById("page-sign");
+var signupLast = signupPage.querySelector(".signup");
+
+//functions starts
+nextBtn[0].onclick = function(){
+  imgeList.style.transform = "translateX(0px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+nextBtn[1].onclick = function(){
+  imgeList.style.transform = "translateX(-800px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+nextBtn[2].onclick = function(){
+  imgeList.style.transform = "translateX(-1600px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+nextBtn[3].onclick = function(){
+  imgeList.style.transform = "translateX(-2400px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+nextBtn[4].onclick = function(){
+  imgeList.style.transform = "translateX(-3100px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+nextBtn[5].onclick = function(){
+  imgeList.style.transform = "translateX(-3800px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+}
+nextBtn[6].onclick = function(){
+  imgeList.style.transform = "translateX(-4600px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+nextBtn[7].onclick = function(){
+  imgeList.style.transform = "translateX(-5300px)";
+  for(i=0;i<8;i++){
+    nextBtn[i].classList.remove("active");
+  }this.classList.add("active");
+} 
+
+//functions of order box
+orderBtna.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtnb.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtnc.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtnd.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtne.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtnf.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtng.onclick = function(){
+  orderBody.classList.add('show');
+} 
+orderBtnh.onclick = function(){
+  orderBody.classList.add('show');
+} 
+okBtn.onclick = function(){
+  orderBody.classList.remove('show');
+} 
+//functions to about page
+aboutBtn.onclick = function(){
+  aboutPage.classList.add('show');
+} 
+lastBtn.onclick = function(){
+  aboutPage.classList.remove('show');
+} 
+//functions to login page
+loginBtn.onclick = function(){
+  signinPage.classList.add('show');
+} 
+signinBtn.onclick = function(){
+  signinPage.classList.remove('show');
+} 
+
+//functions to signup
+signupBtn.onclick = function(){
+  signinPage.classList.remove('show');
+  signupPage.classList.add('show'); 
+} 
+signupLast.onclick = function(){
+  signupPage.classList.remove('show'); 
+} 

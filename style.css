@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&family=Poppins:wght@300;400&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@600&family=Rubik:wght@800;900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: boder-box;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.94), rgba(0,0,0,0.93)), url("/Background.jpg");
+  height: 800px;
+  width: 1000px;
+  background-repeat: no-repeat;
+  background-size: 1000px 1990px;
+  background-position: fixed;
+}
+h5{
+  width: 130px;
+  justify-content: center;
+  padding-left: 10px;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+.meanu-bar-i{
+  float: right;
+}
+nav{
+  font-size: 20px;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  list-style-type: none;
+  margin: 30px 50px;
+  padding-right: 30px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+a:hover{
+  color: indianred;
+}
+nav ul li .login-btn{
+  color: #fff;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  width: 70px;
+  justify-items: center;
+  text-align: center;
+  border: 2px solid #000;
+}
+nav ul li .login-btn:hover{
+  background-color: #000;
+  border: 2px solid #fff;
+}
+.meanu-bar-i i{
+  float: right;
+  padding-top: 35px;
+  padding-right: 25px;
+  color: #fff;
+  display: none;
+}
+.home-png{
+  width: 50px;
+  position: relative;
+  left: 50px;
+}
+header .text-1{
+  color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 520px;
+}
+.text-1 h2{
+  font-size: 40px;
+}
+.text-1 h1{
+  font-size: 45px;
+  color: deepskyblue;
+}
+.text-1 span{
+  color: #fff;
+  font-size: 30px;
+}
+section{
+  color: #fff;
+  overflow: hidden;
+}
+.meanu-filds{
+  display: flex;
+  transition: 2s;
+}
+section .meanu-page .h{
+  position: relative;
+  left: 400px;
+  width: 500px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.list-items{
+  display: flex;
+  justify-items: space-between;
+}
+.imge{
+  position: relative;
+  left: 50px;
+}
+.imge img{
+  width: 500px;
+  height: 400px;
+}
+.list-items .text-about{
+  position: relative;
+  top: 130px;
+  width: 270px;
+}
+.text-about h4{
+  font-size: 30px;
+  color: deepskyblue;
+}
+.text-about .rating{
+  padding: 10px 10px;
+  float: right;
+  padding-right: 35px;
+}
+i:hover{
+  color: orangered;
+}
+.text-about .more{
+  padding: 10px 20px;
+  margin: 10px 0px;
+  background-color: orangered;
+  color: #fff;
+  width: 60px;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.controls{
+  color: #fff;
+  display: flex;
+  position: absolute;
+  left: 400px;
+}
+.btn{
+  display: flex;
+  height: 10px;
+  width: 10px;
+  margin: 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 1s;
+  border: 2px solid #B5BFC6;
+} 
+.controls .active{
+  background-color: #fff;
+  border: none;
+  width: 50px;
+}
+.store-page{
+  position: relative;
+  top: 80px;
+  height: 660px;
+} 
+.store-page .store-h{
+  position: absolute;
+  left: 450px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.store-page .elements{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.store-page .store-filds{
+  position: relative;
+  top: 80px;
+  left: 50px;
+  background-color: #fff;
+  width: 200px;
+  border-radius: 5px;
+  color: #000;
+  height: 270px;
+}
+.store-filds .pics{
+  position: relative;
+  left: 20px;
+}
+.store-filds img{
+  height:150px;
+  width: 150px;
+  background-color: deepskyblue;
+  justify-items: center;
+  text-align: center;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+.store-filds .contant{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+.contant .button{
+  color: #fff;
+  position: relative;
+  background-color: orangered;
+  width: 100px;
+  justify-items: center;
+  text-align: center;
+  padding-top: 5px;
+  height: 30px;
+  border-radius: 5px;
+  left: 50px;
+  cursor: pointer;
+}
+.order-box{
+  position: absolute;
+  left: 250px;
+  top: 500px;
+  background-color: #fff;
+  height: 600px;
+  width: 500px;
+  border-radius: 5px;
+  color: #000;
+  display: none;
+  animation-name: orderplace;
+  animation-duration: 1s;
+}
+.body-box{
+  justify-content: center;
+  text-align: center;
+}
+.great{
+  position: relative;
+  top: 50px;
+}
+.great .one{
+  font-size: 40px;
+  font-weight: 600;
+}
+.great .two{
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.body-box .button-2{
+  position: relative;
+  left: 150px;
+  top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  background-color: dodgerblue;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+@keyframes orderplace {
+  0%{
+    top: 1000px;
+  }
+  20%{
+    top: 80px;
+  }
+  40%{
+    bottom: 60px;
+  }
+  60%{
+    bottom:40px;
+  }
+  80%{
+    bottom: 20px;
+  }
+  100%{
+    bottom: 0px;
+  }
+}
+footer{
+  color: #fff;
+  position: relative;
+  top: 100px;
+}
+footer .footer-h{
+  position: absolute;
+  left: 400px;
+  font-size: 40px;
+  font-weight: 600;
+}
+footer .more{
+  position: absolute;
+  left: 330px;
+  top: 80px;
+  justify-items: center;
+  text-align: center;
+}
+footer .div-1{
+  font-size: 30px;
+  font-weight: 600;
+}
+footer .button-3{
+  position: relative;
+  top: 20px;
+  padding:10px 20px;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+.about{
+  position: absolute;
+  top: 290px;
+  left: 60px;
+  background-color: #fff;
+  height: 1200px;
+  width: 900px;
+  border-radius: 5px;
+  display: none;
+  animation-name: orderplace;
+  animation-duration: 1s;
+}
+.about .about-filds{
+  color: #000;
+}
+.about .about-h{
+  position: relative;
+  left: 320px;
+  top: 30px;
+  font-family: 'Nunito', cursive;
+  font-size: 50px;
+}
+.about .about-con{
+  display: flex;
+}
+.about .image-about{
+  position: relative;
+  left: 50px;
+  top: 100px;
+}
+.about .image-about img{
+  height: 320px;
+  width: 300px;
+  border-radius: 50%;
+  border: 20px solid deepskyblue;
+}
+.about .about-mead{
+  position: relative;
+  top: 200px;
+  left: 90px;
+}
+.about .hai{
+  color: #000;
+  font-size: 40px;
+  font-family: 'Roboto Slab', cursive;
+}
+.about .about-mead h6{
+  color: #ff0059;
+  font-size: 40px;
+  font-family: 'Roboto Slab', cursive;
+  
+}
+.about .social-media{
+  display: flex;
+  position: relative;
+  top: 10px;
+  left: 430px;
+  gap: 50px;
+  font-size: 20px;
+  height: 50px;
+}
+.about .social-media .social-icons{
+  background-color: #000;
+  justify-items: center;
+  text-align: center;
+  height: 35px;
+  padding-top: 10px;
+  width: 45px;
+  color: #fff;
+  border-radius: 100%;
+  transition: 0.5s ease all;
+  box-shadow: 0 0 10px #000;
+}
+.about .social-media .social-icons i{
+  transition: 0.5s ease all;
+}
+.about .social-media .social-icons i:hover,
+.about .social-media .social-icons:hover{
+  background-color: #fff;
+  color: #000;
+}
+.about .rating-text{
+  position: relative;
+  top: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.about .rating-text .feed-text{
+  color: #000;
+  font-size: 30px;
+  font-family: 'Nunito', cursive;
+}
+.about .buttons-list{
+  color: #fff;
+  position: relative;
+  top: 130px;
+  left: 350px;
+  font-size: 20px;
+}
+.about .buttons-list .button-1{
+  background-color: dodgerblue;
+  width: 200px;
+  height: 30px;
+  justify-items: center;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.about .last-text{
+  color: #000;
+  position: relative;
+  top: 150px;
+  left: 315px;
+}
+.login-page{
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  background-color: #fff;
+  color: #000;
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  display: none;
+  animation-name: orderplace;
+  animation-duration: 1s;
+}
+.login-page .login-h{
+  position: relative;
+  left: 130px;
+  top: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  color: dodgerblue;
+}
+.login-page .user-f{
+  position: relative;
+  display: flex;
+  top: 30px;
+  left: 35px;
+  margin: 20px;
+  gap: 10px;
+}
+.login-page .user-f .int{
+  height: 40px;
+  width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login-page .user-f i{
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+}
+.login-page .user-f .int[type="password"]{
+  padding-left: 10px;
+}
+.login-page .user-f .int[type="text"]{
+  padding-left: 10px;
+}
+.login-page .user-c{
+  display: flex;
+  position: relative;
+  left: 75px;
+  top: 15px;
+  gap: 10px;
+}
+.login-page .check{
+  position: relative;
+  left: 10px;
+  width: 20px;
+}
+.login-page .Matt{
+  font-size: 11px;
+}
+.login-page .Matt span{
+  color: orangered;
+}
+.login-page .main-btns{
+  position: relative;
+  top: 50px;
+  left: px;
+  font-size: 20px;
+  justify-items: center;
+  text-align: center;
+}
+.input-filds .main-btns button{
+  width: 190px;
+  height: 35px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+.signup-page{
+  position: absolute;
+  left: 280px;
+  top: 500px;
+  background-color: #fff;
+  color: #000;
+  height: 450px;
+  width: 400px;
+  display: none;
+  animation-name: orderplace;
+  animation-duration: 1s;
+}
+.signup-page .signup-h{
+  position: relative;
+  left: 90px;
+  top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: orangered;
+}
+.signup-page .signup-oth{
+  display: flex;
+  gap: 30px;
+  position: relative;
+  top: 30px;
+  left: 70px;
+}
+.signup-page .signup-oth .oth-l{
+  background-color: #fff;
+  color: #000;
+  height: 30px;
+  width: 38px;
+  justify-items: center;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  transition: 0.5s ease all;
+}
+.signup-page .signup-oth .oth-l:hover{
+  background-color: #000;
+}
+.signup-page .signup-oth .oth-l i:hover{
+  color: #fff;
+}
+.signup-page .another{
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+.signup-page .signup-in{
+  position: relative;
+  top: 75px;
+  left: 65px;
+}
+.signup-page .signup-in .ints{
+  margin: 10px;
+  width: 250px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.signup-page .signup-in .ints[type="text"]{
+  padding-left: 10px;
+}
+.signup-page .signup-in .ints[type="password"]{
+  padding-left: 10px;
+}
+.signup-page .userc{
+  display: flex;
+  gap: 5px;
+  padding-left: 13px;
+}
+.signup-page .userc .matt{
+  font-size: 10px;
+}
+.signup-page .userc .matt span{
+  color: red;
+}
+.signup-page .signup-button{
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.signup-page .signup-button .signup{
+  height: 40px;
+  width: 200px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.show{
+  display: block;
+}
